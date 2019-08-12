@@ -2,8 +2,8 @@
 Code presented in Android Meetup hosted by Tokopedia India
 
 There are 2 Branches here. 
-#Master branch - Contains code for constraint layout animations
-#constraintlayoutperf - code for measuring layout time
+- #Master branch - Contains code for constraint layout animations
+- #constraintlayoutperf - profiling of layout
 
 Below are the gifs.
 all of them respond to click except the last one (Simple Parallax) which is also responds to drag and click. You can drag the screen as well as clickon the small profile image
