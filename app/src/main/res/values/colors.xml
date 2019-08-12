@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="tkpd_main_green">#42b549</color>
+    <color name="white_two">#e0e0e0</color>
+
+    <color name="grey_100">#f5f5f5</color>
+    <color name="grey_250">#f6f6f6</color>
+    <color name="grey_default_background">#f3f3f3</color>
+    <color name="grey_200">#f1f1f1</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_350">#c4c4c4</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_450">#b9b9b9</color>
+    <color name="grey_500">#9e9e9e</color>
+    <color name="grey_550">#787878</color>
+    <color name="grey_560">#ae31353b</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="gr_700">#ae31353b</color>
+    <color name="grey_730">#52565e</color>
+    <color name="grey_750">#4b4b4b</color>
+    <color name="grey_796">#f531353b</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_1100">#f6f6f6</color>
+    <color name="grey_title">#60000000</color>
+    <color name="green_variant_choosed">#f3fef3</color>
+
+    <color name="light_blue_300">#4fc3f7</color>
+
+    <color name="cyan_100">#b2ebf2</color>
+
+    <color name="teal_300">#4db6ac</color>
+    <color name="teal_500">#009688</color>
+
+    <color name="red_50">#fdebec</color>
+    <color name="red_100">#f9bdbb</color>
+    <color name="r_100">#ffeaef</color>
+    <color name="red_200">#f69988</color>
+    <color name="red_300">#f36c60</color>
+    <color name="red_400">#e84e40</color>
+    <color name="r_400">#ff5c84</color>
+    <color name="red_500">#e51c23</color>
+    <color name="red_600">#dd191d</color>
+    <color name="red_a700">#e00032</color>
+    <color name="red_800">#ff5722</color>
+
+    <color name="yellow_50">#FFFDE7</color>
+    <color name="yellow_600">#fdd835</color>
+
+    <color name="light_green_300">#aed581</color>
+
+    <color name="green_50">#f3fef3</color>
+    <color name="green_200">#72d572</color>
+    <color name="green_250">#42B549</color>
+    <color name="green_300">#42bd41</color>
+    <color name="green_400">#2baf2b</color>
+    <color name="green_500">#259b24</color>
+    <color name="g_500">#03ac0e</color>
+    <color name="green_600">#0a8f08</color>
+    <color name="green_800">#056f00</color>
+    <color name="lightish_green">#77db80</color>
+    <color name="green_900">#d3f0d4</color>
+    <color name="green_1000">#ade3af</color>
+    <color name="green_1100">#87d58b</color>
+
+    <color name="yellow_105">#fffbcd</color>
+    <color name="yellow_110">#ffeaac</color>
+    <color name="yellow_200">#ecdb77</color>
+    <color name="yellow_notif">#fffeeb</color>
+    <color name="y_200">#fff0b3</color>
+
+    <color name="orange_300">#ffb74d</color>
+    <color name="orange_900">#e65100</color>
+
+    <color name="deep_orange_500">#ff5722</color>
+    <color name="orange_100">#f5751d</color>
+    <color name="orange_607">#ff5607</color>
+    <color name="orange_500">#fa591d</color>
+
+    <color name="shadow_1">#00CCCCCC</color>
+    <color name="shadow_2">#10CCCCCC</color>
+    <color name="shadow_3">#20CCCCCC</color>
+    <color name="shadow_4">#30CCCCCC</color>
+    <color name="shadow_5">#50CCCCCC</color>
+
+    <color name="grey_background">#f8f8f8</color>
+    <color name="white_65">#A6ffffff</color>
+    <color name="white_95">#f2ffffff</color>
+    <color name="grey_button">#e6e6e6</color>
+    <color name="preview_bg">#d3f0d4</color>
+    <color name="grey_150">#4a4a4a</color>
+
+    <color name="yellow_100">#ca8600</color>
+    <color name="red_150">#d43000</color>
+    <color name="red_30">#ffccae</color>
+    <color name="blue_30">#fafbfc</color>
+
+
+    <color name="black_38">#60000000</color>
+    <color name="black_39">#b3000000</color>
+    <color name="black_40">#8a000000</color>
+    <color name="black_50">#33000000</color>
+    <color name="medium_green">#42b549</color>
+    <color name="divider_color">#ededed</color>
+    <color name="ic_back_color">#26000000</color>
+
+    <color name="purple">#7a08c9</color>
+
+    <color name="grey_button_compat">#ae31353b</color>
+    <color name="unify_G500">#03AC0E</color>
+    <color name="unify_Y500">#FA591D</color>
+    <color name="unify_N75">#E5E7E9</color>
+    <color name="unify_N700_32">#5231353B</color>
+    <color name="unify_N700_44">#7031353B</color>
+</resources>

@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">Constraint Performance</string>
+    <string name="label_account_buyer">Beli</string>
+    <string name="label_account_seller">Jual</string>
+    <string name="title_account">Akun Saya</string>
+    <string name="label_menu_setting">Pengaturan</string>
+    <string name="label_menu_notification">Feed</string>
+    <string name="label_user_tokopoint">TokoPoints</string>
+    <string name="label_user_voucher">Kupon Saya</string>
+    <string name="title_account_setting">Akun</string>
+    <string name="account_home_title_shop_setting">Toko</string>
+    <string name="title_tkpd_pay_setting">Pembayaran</string>
+    <string name="title_tkpd_template_setting">Template Pembelian</string>
+    <string name="title_notification_setting">Notifikasi</string>
+    <string name="title_touch_id_setting">Touch ID</string>
+    <string name="title_tnc_setting">Syarat dan Ketentuan</string>
+    <string name="title_privacy_setting">Kebijakan Privasi</string>
+    <string name="title_help_center_setting">Pusat Bantuan</string>
+    <string name="subtitle_account_setting">Data Diri, Alamat, dan Keamanan Akun</string>
+    <string name="account_home_subtitle_shop_setting">Lokasi, Etalase, Pengiriman, dan lainnya</string>
+    <string name="subtitle_template_setting">Nikmati Transaksi Mudah dan Cepat</string>
+    <string name="subtitle_tkpd_pay_setting">Kartu Kredit, dan Metode lainnya</string>
+    <string name="subtitle_notification_setting">Aplikasi, Chat, Diskusi, dan lainnya</string>
+    <string name="account_home_label_logout">Keluar dari Tokopedia</string>
+    <string name="account_home_button_logout">Keluar</string>
+    <string name="title_personal_data_setting">Data Diri</string>
+    <string name="title_password_setting">Kata Sandi</string>
+    <string name="title_kyc_setting">Dokumen Data Diri</string>
+    <string name="title_setting_pin">PIN Tokopedia</string>
+    <string name="title_address_setting">Daftar Alamat</string>
+    <string name="title_sampai_project">Tokopedia Corner</string>
+    <string name="screentitle_account_setting">Atur Akun</string>
+    <string name="title_shop_info_setting">Informasi</string>
+    <string name="title_shop_etalase_setting">Etalase</string>
+    <string name="title_shop_product_setting">Produk</string>
+    <string name="title_shop_location_setting">Lokasi</string>
+    <string name="title_shop_shipment_setting">Pengiriman</string>
+    <string name="title_shop_note_setting">Catatan</string>
+    <string name="screentitle_store_setting">Atur Toko</string>
+    <string name="title_tokocard_setting">TokoSwipe</string>
+    <string name="title_saldo_setting">Saldo</string>
+    <string name="title_bank_account_setting">Akun Bank</string>
+    <string name="title_credit_card_setting">Kartu Kredit</string>
+    <string name="title_debit_instant_setting">Debit Instan</string>
+    <string name="screentitle_tkpd_pay_setting">Atur Pembayaran</string>
+    <string name="screentitle_notification_setting">Atur Notifikasi</string>
+    <string name="save_setting_label">Simpan</string>
+    <string name="header_privacy_account_setting">Keamanan</string>
+    <string name="title_favorite_page">Favorit</string>
+
+    <string name="label_chat">Chat</string>
+    <string name="label_chat_admin">Chat Tokopedia Administrator</string>
+    <string name="label_talk">Diskusi</string>
+    <string name="label_review">Ulasan</string>
+    <string name="label_bulletin">Newsletter</string>
+
+    <string name="label_review_summary">Setiap ulasan dan komentar yang saya terima</string>
+    <string name="label_talk_summary">Setiap pertanyaan dan komentar diskusi yang saya terima</string>
+    <string name="label_chat_summary">Setiap chat yang saya terima</string>
+    <string name="label_chat_admin_summary">Setiap chat dari Tokopedia Administrator yang saya terima</string>
+    <string name="label_bulletin_summary">Setiap promosi, tips dan trik, update informasi terbaru seputar Tokopedia</string>
+
+    <string name="label_receive_purchasing">Pembelian</string>
+    <string name="label_receive_sales">Penjualan</string>
+    <string name="label_receive_pm">Pesan</string>
+    <string name="label_receive_talk">Diskusi</string>
+    <string name="label_receive_review">Ulasan</string>
+    <string name="label_receive_promo">Promo</string>
+    <string name="label_receive_seller_info">Info Penjual</string>
+    <string name="label_receive_group_chat">Play</string>
+
+
+    <string name="pref_receive_purchasing" translatable="false">notification_purchase</string>
+    <string name="pref_receive_sales" translatable="false">notification_sales</string>
+    <string name="pref_receive_pm" translatable="false">notification_receive_pm</string>
+    <string name="pref_receive_talk" translatable="false">notification_receive_talk</string>
+    <string name="pref_receive_review" translatable="false">notification_receive_review</string>
+    <string name="pref_receive_promo" translatable="false">notification_receive_promo</string>
+    <string name="pref_receive_seller_info" translatable="false">notification_seller_info</string>
+    <string name="pref_receive_group_chat" translatable="false">notification_group_chat</string>
+    <string name="pref_receive_shake" translatable="false">notification_shake_shake</string>
+
+    <string name="application_version_fmt">Versi %1$s</string>
+    <string name="error_bank_no_password_title">Anda tidak memiliki kata sandi</string>
+    <string name="error_bank_no_password_content">Silahkan buat kata sandi Tokopedia terlebih dahulu untuk menambah rekening.</string>
+    <string name="error_no_password_yes">Buat kata sandi</string>
+    <string name="error_no_password_no">Tutup</string>
+    <string name="message_success_change_profile">Sukses mengubah profil</string>
+
+    <string name="label_profile_completion">Kelengkapan Profile %1$d%%</string>
+    <string name="label_tokopedia_pay_title">Tokopedia Pay</string>
+    <string name="label_tokopedia_pay_see_all">Lihat Semua</string>
+    <string name="label_tokopedia_pay_deposit">Saldo</string>
+    <string name="label_tokopedia_pay_wallet">TokoCash</string>
+    <string name="title_menu_transaction">Transaksi</string>
+    <string name="title_menu_waiting_for_payment">Menunggu Pembayaran</string>
+    <string name="label_menu_waiting_for_payment">Semua transaksi yang belum dibayar</string>
+    <string name="title_menu_shopping_transaction">Transaksi Belanja</string>
+    <string name="label_menu_show_history">Lihat Riwayat</string>
+    <string name="label_menu_waiting_confirmation">Menunggu Konfirmasi</string>
+    <string name="label_menu_order_processed">Pesanan Diproses</string>
+    <string name="label_menu_shipping">Sedang Dikirim</string>
+    <string name="label_menu_delivered">Sampai Tujuan</string>
+    <string name="title_menu_buyer_complain">Komplain Sebagai Pembeli</string>
+    <string name="label_menu_buyer_complain">Lihat status komplain</string>
+    <string name="title_menu_seller_complain">Komplain Sebagai Penjual</string>
+    <string name="label_menu_seller_complain">Lihat status komplain</string>
+    <string name="title_menu_other_transaction">Daftar Transaksi</string>
+    <string name="title_menu_favorites">Favorit Saya</string>
+    <string name="title_menu_favorite_topic">Topik Favorit</string>
+    <string name="label_menu_favorite_topic">Atur topik favorit Anda</string>
+    <string name="title_menu_last_seen">Terakhir Dilihat</string>
+    <string name="label_menu_last_seen">Cek Produk terakhir yang dilihat</string>
+    <string name="title_menu_favorite_shops">Toko Favorit</string>
+    <string name="label_menu_favorite_shops">Lihat Toko yang sudah Anda favoritkan</string>
+    <string name="title_menu_mybills"><![CDATA[Langganan]]></string>
+    <string name="label_menu_mybills"><![CDATA[Atur & bayar tagihan dalam satu tempat]]></string>
+    <string name="title_menu_top_up_bill_subscription"><![CDATA[Langganan Top-up & Tagihan]]></string>
+    <string name="label_menu_top_up_bill_subscription"><![CDATA[Lihat langganan Top-up & Tagihan]]></string>
+    <string name="title_menu_top_up_numbers"><![CDATA[Nomor Top-up & Tagihan]]></string>
+    <string name="label_menu_top_up_numbers"><![CDATA[Lihat riwayat nomor Top-up & Tagihan]]></string>
+    <string name="title_menu_wallet_referral">Dapatkan TokoCash</string>
+    <string name="label_menu_wallet_referral">Bagikan Aplikasi ini ke teman Anda</string>
+    <string name="title_menu_help">Bantuan</string>
+    <string name="title_menu_resolution_center">Pusat Bantuan</string>
+    <string name="label_menu_resolution_center">Lihat solusi terbaik atau hubungi kami</string>
+    <string name="title_menu_top_up_bill"><![CDATA[Top-up & Tagihan]]></string>
+    <string name="title_menu_market_place">Belanja</string>
+    <string name="title_menu_deals">Deals</string>
+    <string name="title_menu_train">Kereta</string>
+    <string name="title_menu_flight">Pesawat</string>
+    <string name="title_menu_hotel">Hotel</string>
+    <string name="title_menu_reksadana">Reksa Dana</string>
+    <string name="title_menu_event">Event</string>
+    <string name="title_menu_gold">Emas</string>
+    <string name="title_menu_gift_card">Gift Card</string>
+    <string name="title_menu_insurance">Asuransi</string>
+    <string name="title_menu_modal_toko">Modal Toko</string>
+    <string name="title_menu_zakat">Zakat</string>
+    <string name="title_menu_donation">Donasi</string>
+    <string name="title_menu_show_all">Lihat\nSemua</string>
+    <string name="title_menu_sales">Penjualan</string>
+    <string name="label_menu_new_order">Pesanan Baru</string>
+    <string name="label_menu_ready_to_ship">Siap Dikirim</string>
+    <string name="label_menu_shipped">Sedang Dikirim</string>
+    <string name="label_menu_arrive_at_destination">Sampai Tujuan</string>
+    <string name="title_menu_product">Produk</string>
+    <string name="title_menu_product_list">Produk Anda</string>
+    <string name="label_menu_product_list">Lihat dan atur semua Produk</string>
+    <string name="title_menu_product_feature">Produk Unggulan</string>
+    <string name="label_menu_product_feature">Tampilkan 5 Produk terbaik Toko Anda</string>
+    <string name="title_menu_product_draft">Draft Produk</string>
+    <string name="label_menu_product_draft">Selesaikan kelengkapan detail Produk</string>
+    <string name="title_menu_other_features">Fitur Lainnya</string>
+    <string name="title_menu_opportunity">Peluang Pesanan</string>
+    <string name="label_menu_opportunity">Pesanan yang dibatalkan penjual lain</string>
+    <string name="title_menu_seller_center">Seller Center</string>
+    <string name="title_menu_topads">TopAds</string>
+    <string name="label_menu_topads">Lihat dan atur promo Anda</string>
+    <string name="label_menu_seller_center">Edukasi dan inspirasi berjualan</string>
+    <string name="title_menu_loan">Modal usaha untuk Toko Anda</string>
+    <string name="label_menu_loan">Potensi pinjaman senilai</string>
+    <string name="label_tokopoint_see_voucher">Lihat Kupon</string>
+    <string name="title_app_notif_setting">Notifikasi Aplikasi</string>
+    <string name="title_email_notif_setting">Notifikasi Email</string>
+    <string name="title_menu_wishlist">Wishlist</string>
+    <string name="label_menu_wishlist">Lihat Produk yang sudah Anda wishlist</string>
+    <string name="label_button_add_product">+ Tambah Produk</string>
+    <string name="title_dev_options">Developer Options</string>
+    <string name="title_shake_setting">Shake Shake</string>
+    <string name="subtitle_shake_setting">Aktifkan untuk mendapatkan penawaran menarik</string>
+    <string name="title_geolocation_setting">Lokasi</string>
+    <string name="subtitle_geolocation_setting">Mendeteksi lokasi secara otomatis</string>
+    <string name="account_home_label_logout_confirmation">Apakah Anda ingin keluar?</string>
+    <string name="account_home_label_cancel">Batal</string>
+    <string name="title_app_review_setting">Review Aplikasi</string>
+    <string name="label_wallet_activation">Aktivasi TokoCash</string>
+    <string name="title_pm_card">Pengaturan Power Merchant</string>
+    <string name="desc_pm_card">Kelola toko dengan fitur eksklusif</string>
+
+
+    <string name="msg_has_no_shop">Mulai dengan Tokopedia!</string>
+    <string name="msg_desc_has_no_shop">Buka Toko di Tokopedia, Sekarang! <b>Mudah, Aman,</b> dan
+        <b>Menguntungkan</b>.</string>
+    <string name="top_features">Top Features</string>
+    <string name="topads_desc">Media iklan Produk dan Toko</string>
+    <string name="gold_merchant_desc">Fitur-fitur Berjualan Eksklusif</string>
+    <string name="seller_center">Seller Center</string>
+    <string name="seller_center_desc">Potensi pinjaman senilai Rp. 1.000.000</string>
+    <string name="open_shop">Buka Toko</string>
+    <string name="learn_more">Pelajari Selengkapnya</string>
+    <string name="know_more">Mau Tahu Caranya?</string>
+    <string name="message_success_change_password">Kata sandi berhasil diubah</string>
+    <string name="verified_account">Verified Account</string>
+    <string name="error_no_internet_connection">Tidak ada koneksi internet</string>
+    <string name="label_total_coupon">%1$s Kupon</string>
+
+    <string name="title_menu_challenge">Tokopedia Challenge</string>
+    <string name="label_menu_challenge">Ikuti tantangan dan dapatkan hadiah!</string>
+    <string name="title_menu_affiliate">Raih Komisi di By Me</string>
+    <string name="label_menu_affiliate">Ajak teman beli produk pilihanmu!</string>
+    <string name="curate_product_by_me">Post Rekomendasi By Me</string>
+    <string name="selesai">Selesai</string>
+    <string name="title_seller_saldo">Saldo</string>
+
+
+
+    <string name="start_with_tokopedia">Mulai Dengan Tokopedia!</string>
+    <string name="no_shop_sub">Punya toko sendiri tak cuma mimpi! \nTokopedia dukung wujudkan mimpimu \ndengan 3 keunggulan ini</string>
+    <string name="no_shop_sub_1">Buka Toko gratis tanpa syarat</string>
+    <string name="no_shop_sub_2">Jangkauan luas &amp; kurir lengkap</string>
+    <string name="no_shop_sub_3">Fitur ekslusif untuk bisnismu</string>
+    <string name="open_shop_free">Buka Toko Gratis</string>
+
+    <string name="ulasan">Ulasan</string>
+    <string name="ulasan_desc">Berikan penilaian dan ulasan Produk</string>
+    <string name="label_new">Baru</string>
+
+    <string name="account_home_title_geolocation_alertdialog">Kamu bisa izinkan akses lokasi di Izin -> Lokasi</string>
+    <string name="account_home_ok_geolocation_alertdialog">OK</string>
+    <string name="account_home_batal_geolocation_alertdialog">Batal</string>
+
+</resources>

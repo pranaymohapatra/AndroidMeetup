@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_16">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_16"
+                        android:paddingLeft="@dimen/dp_16"
+                        android:paddingBottom="@dimen/dp_16"
+                        android:text="Ticket Details"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/sp_22"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/event_image_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:scaleType="centerCrop"
+                        android:src="@color/deep_orange_500" />
+
+                    <TextView
+                        android:id="@+id/event_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_16"
+                        android:paddingRight="@dimen/dp_16"
+                        android:text="Rp 54688222"
+                        android:textColor="@color/grey_150"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold" />
+
+                    <include
+                        android:id="@+id/event_time_tv"
+                        layout="@layout/image_textview_holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_16" />
+
+                    <include
+                        android:id="@+id/event_address_tv"
+                        layout="@layout/image_textview_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_8" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_2"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@color/grey_100" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_ticket_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="Ticket"
+                            android:textColor="@color/black_50"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_ticket_cnt_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="@dimen/dp_25"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:layout_toRightOf="@+id/tv_ticket_summary"
+                            android:text="Rp 123456"
+                            android:textColor="@color/tkpd_main_green"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/selected_seats_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/event_total_tickets"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="Nomor Kursi"
+                            android:textColor="@color/black_50"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/seat_numbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="@dimen/dp_25"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:layout_toRightOf="@+id/event_total_tickets"
+                            android:text="Rp 23421133"
+                            android:textColor="@color/black_50"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_16">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:paddingBottom="8dp"
+                        android:text="tujuan pengiriman tiket"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/sp_22"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/info_email"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignBottom="@+id/tv1"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:layout_toEndOf="@+id/tv1"
+                        android:layout_toRightOf="@+id/tv1"
+                        app:srcCompat="@drawable/ic_tokopoint" />
+
+                    <TextView
+                        android:id="@+id/update_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_telephone"
+                        android:layout_alignBottom="@+id/tv_telephone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@drawable/bg_button_disabled"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_2"
+                        android:text="Ubah"
+                        android:textColor="@color/black_38"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="-8dp"
+                        android:text="email"
+                        android:textColor="@color/grey_700"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_visitor_names"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv2"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:focusableInTouchMode="true"
+                        android:text="Mad Max and 4 Others"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/update_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_visitor_names"
+                        android:layout_alignBottom="@+id/tv_visitor_names"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@drawable/bg_button_disabled"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_2"
+                        android:text="ubah"
+                        android:textColor="@color/black_38"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_visitor_names"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="-8dp"
+                        android:text="No. Telepon"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/tv_telephone"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv3"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:focusableInTouchMode="true"
+                        android:paddingBottom="8dp"
+                        android:text="Mad Max and 4 Others"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:visibility="gone"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_16">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_more_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            android:text="data pelanggan tambahan"
+                            android:textColor="@color/black_50"
+                            android:textSize="@dimen/sp_22"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/info_moreinfo"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:layout_marginBottom="14dp"
+                            app:srcCompat="@drawable/ic_account_voucher" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:text="Informasi ini akan digunakan pada saat penukaran tiket"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/ed_form_1"
+                        android:layout_width="296dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/ed_form_2"
+                        android:layout_width="296dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/ed_form_3"
+                        android:layout_width="296dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/ed_form_4"
+                        android:layout_width="296dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:textColor="@color/grey_500"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/goto_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_16">
+
+                        <TextView
+                            android:id="@+id/goto_promo_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="promo_section"
+                            android:textColor="@color/tkpd_main_green"
+                            android:textSize="@dimen/sp_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_16">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv3"
+                        android:paddingStart="@dimen/dp_16"
+                        android:paddingEnd="@dimen/dp_16"
+                        android:paddingBottom="8dp"
+                        android:text="rincian harga"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/sp_22"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/basefare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingEnd="@dimen/dp_16"
+                            android:text="Base Fare"
+                            android:textColor="@color/grey_700"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_base_fare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="Rp 540000"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/base_fare_break"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/basefare"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginEnd="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:layout_marginBottom="4dp"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="rp_5980000"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_section_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingEnd="@dimen/dp_16"
+                            android:text="total_diskon"
+                            android:textColor="@color/grey_700"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal"
+                            tools:text="Rp 540000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingEnd="@dimen/dp_16"
+                            android:text="biaya layanan"
+                            android:textColor="@color/grey_700"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_conv_fees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal"
+                            tools:text="Rp 540000" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_2"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:background="@color/black_40" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingEnd="@dimen/dp_16"
+                            android:text="Pembayaran Anda"
+                            android:textColor="@color/black_50"
+                            android:textSize="@dimen/sp_14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="@dimen/dp_16"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:paddingStart="@dimen/dp_16"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:text="Rp 540000"
+                            android:textColor="@color/red_800"
+                            android:textSize="@dimen/sp_18"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/btn_go_to_payment"
+                    layout="@layout/btn_book_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_38"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/prog_bar"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</FrameLayout>

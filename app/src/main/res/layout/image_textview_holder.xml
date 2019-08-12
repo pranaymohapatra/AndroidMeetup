@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_text_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_holder_small"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_byme_blue" />
+
+    <TextView
+        android:id="@+id/textview_holder_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:text="25 Nov 2017 Pukul"
+        android:textColor="@color/grey_500"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="normal" />
+
+</LinearLayout>
