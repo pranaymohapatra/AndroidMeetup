@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="placeholder_min_size">100dp</dimen>
+    <dimen name="fab_parallax">148dp</dimen>
+</resources>
